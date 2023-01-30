@@ -1,4 +1,3 @@
-
 var cl = console.log;
 
 var imagesArray = [
@@ -17,7 +16,7 @@ var imagesArray = [
 ]
 var imgContainer = document.getElementById("imgContainer");
 var result = '';
-for( var i = 0; i < imagesArray.length; i++){
+for( let i = 0; i < imagesArray.length; i++){
     cl(imagesArray[i])
         result += ` 
                     <div class ="col-4 mb-4">
@@ -30,7 +29,3 @@ for( var i = 0; i < imagesArray.length; i++){
         `
 }
 imgContainer.innerHTML = result;
-
-
-
-
